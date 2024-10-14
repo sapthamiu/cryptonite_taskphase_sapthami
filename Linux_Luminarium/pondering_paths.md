@@ -95,7 +95,7 @@ In this level, we'll practice refering to paths using `.` a bit more. This chall
 ### Approach
 >**Notes:** Linux explicitly avoids automatically looking in the current directory when you provide a "naked" path.  
     `cd /challenge`  
-    `run`
+    `run`  
 This will not invoke `/challenge/run`.  
 This is actually a safety measure: if Linux searched the current directory for programs every time you entered a naked path, you could accidentally execute programs in your current directory that happened to have the same names as core system utilities!  
 As a result, the above commands will yield a `command not found` error.  
