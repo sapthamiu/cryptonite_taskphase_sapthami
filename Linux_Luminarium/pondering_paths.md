@@ -32,3 +32,17 @@ cd /usr/include
 ```
 ### Flag
 `pwn.college{YQEGD8o88dRFsw8ydrpZBA0U6Ke.dZDN1QDLyUzM2czW}`
+
+## Position Elsewhere
+### Description
+This challenge will require you to execute the /challenge/run program from a specific path (which it will tell you). You'll need to cd to that directory before rerunning the challenge program.
+### Approach
+Upon invoking the challenge, it asks you to redirect to the `/proc/67/fd ` directory and rerun the challenge.
+### Commands
+```
+/challenge/run
+cd /proc/67/fd
+/challenge/run
+```
+### Flag
+`pwn.college{47ptEdRDSXpTqnyUkkdAFDiFg7X.ddDN1QDLyUzM2czW}`
